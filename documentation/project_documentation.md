@@ -932,53 +932,55 @@ Employee_Management_System/
 
 ## 17. Screenshots and Evidence
 
-Screenshots were captured during the development and testing of the Employee Management System to provide evidence of the implemented functionality.
+Screenshots were captured during the development and testing of the Employee Management System to provide visual evidence of the implemented features.
 
-### Screenshot 1 — Employee Management Interface
+### 17.1 Adding Employee
 
-Shows the main React application interface containing the employee form and employee directory.
+This screenshot shows the process of adding a new employee record.
 
-**File:** `Screenshot_1_Home.png`
+![Adding Employee](Screenshots/Adding%20employee.png)
 
-### Screenshot 2 — Add Employee
+### 17.2 Database
 
-Shows the process of entering employee information and creating a new employee record.
+This screenshot shows the employee records stored in the MySQL database using MySQL Workbench.
 
-**File:** `Screenshot_2_Add.png`
+![Database](Screenshots/Database.png)
 
-### Screenshot 3 — Employee Records
+### 17.3 Deleting Employee
 
-Shows employee records displayed in the Employee Directory after retrieving data from the backend.
+This screenshot shows the employee deletion functionality.
 
-**File:** `Screenshot_3_Records.png`
+![Deleting Employee](Screenshots/deleting%20employee.png)
 
-### Screenshot 4 — Edit Employee
+### 17.4 Error Handling
 
-Shows an existing employee record being edited and updated through the React interface.
+This screenshot shows the validation or error message displayed by the application.
 
-**File:** `Screenshot_4_Edit.png`
+![Error Handling](Screenshots/Error%20occur.png)
 
-### Screenshot 5 — Delete Employee
+### 17.5 Main Application
 
-Shows the delete operation and confirmation process for removing an employee record.
+This screenshot shows the main Employee Management System interface.
 
-**File:** `Screenshot_5_Delete.png`
+![Main Application](Screenshots/Main%20page.png)
 
-### Screenshot 6 — MySQL Database
+### 17.6 Postman
 
-Shows employee records stored in the MySQL database using MySQL Workbench.
+This screenshot shows REST API testing using Postman.
 
-**File:** `Screenshot_6_Database.png`
+![Postman](Screenshots/postman%20testing.png)
 
-### Screenshot 7 — Postman API Testing
+### 17.7 Updating Employee
 
-Shows REST API testing using Postman for the Employee Management System.
+This screenshot shows the process of updating an existing employee record.
 
-**File:** `Screenshot_7_Postman.png`
+![Updating Employee](Screenshots/updating%20employee.png)
 
 ### Evidence Summary
 
-The screenshots provide visual evidence that the application interface, CRUD operations, database storage, and REST API functionality were implemented and tested.
+The screenshots provide visual evidence of the application's employee management features, database integration, API testing, and error handling.
+
+
 
 ## 18. Conclusion
 
