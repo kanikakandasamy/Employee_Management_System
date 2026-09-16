@@ -600,23 +600,23 @@ Testing was performed to verify that the Employee Management System works correc
 
 ### 12.1 Functional Test Cases
 
-| Test ID | Test Case                    | Expected Result                           | Status |
-| ------- | ---------------------------- | ----------------------------------------- | ------ |
-| TC01    | Add employee with valid data | Employee is created                       | PASS   |
-| TC02    | View all employees           | Employee records are displayed            | PASS   |
-| TC03    | View one employee            | Selected employee is displayed            | PASS   |
-| TC04    | Update employee details      | Employee information is updated           | PASS   |
-| TC05    | Delete employee              | Employee is removed                       | PASS   |
-| TC06    | Verify deleted employee      | `404 Not Found` is returned               | PASS   |
-| TC07    | Search employee              | Matching records are displayed            | PASS   |
-| TC08    | Filter by department         | Selected department records are displayed | PASS   |
-| TC09    | Submit empty required fields | Validation error is displayed             | PASS   |
-| TC10    | Enter invalid email          | Validation error is displayed             | PASS   |
-| TC11    | Enter invalid phone number   | Validation error is displayed             | PASS   |
-| TC12    | Enter invalid salary         | Validation error is displayed             | PASS   |
-| TC13    | Use duplicate Employee ID    | Duplicate value is rejected               | PASS   |
-| TC14    | Use duplicate email          | Duplicate value is rejected               | PASS   |
-| TC15    | Request invalid employee ID  | `404 Not Found` is returned               | PASS   |
+| Test ID | Test Case                    | Expected Result                           | Actual Result                | Status |
+| ------- | ---------------------------- | ----------------------------------------- | ---------------------------- | ------ |
+| TC01    | Add employee with valid data | Employee is created                       | `201 Created`                | PASS   |
+| TC02    | View all employees           | Employee records are displayed            | `200 OK`                     | PASS   |
+| TC03    | View one employee            | Selected employee is displayed            | Employee details returned    | PASS   |
+| TC04    | Update employee details      | Employee information is updated           | `200 OK`                     | PASS   |
+| TC05    | Delete employee              | Employee is removed                       | `204 No Content`             | PASS   |
+| TC06    | Verify deleted employee      | Deleted employee cannot be retrieved      | `404 Not Found`              | PASS   |
+| TC07    | Search employee              | Matching records are displayed            | Search working in frontend   | PASS   |
+| TC08    | Filter by department         | Selected department records are displayed | Filter working in frontend   | PASS   |
+| TC09    | Submit empty required fields | Validation error is displayed             | Validation message displayed | PASS   |
+| TC10    | Enter invalid email          | Validation error is displayed             | Validation message displayed | PASS   |
+| TC11    | Enter invalid phone number   | Validation error is displayed             | Validation message displayed | PASS   |
+| TC12    | Enter invalid salary         | Validation error is displayed             | Validation message displayed | PASS   |
+| TC13    | Duplicate Employee ID        | Duplicate value is rejected               | `400 Bad Request`            | PASS   |
+| TC14    | Duplicate email              | Duplicate value is rejected               | `400 Bad Request`            | PASS   |
+| TC15    | Invalid employee ID          | Appropriate error is returned             | `404 Not Found`              | PASS   |
 
 ### 12.2 API Testing
 
